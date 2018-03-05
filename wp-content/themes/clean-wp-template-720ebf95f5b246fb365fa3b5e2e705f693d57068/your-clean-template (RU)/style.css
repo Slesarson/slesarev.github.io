@@ -1,0 +1,929 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+p {
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*классы хедера */
+ .head {
+	display: flex;
+	justify-content: space-between;
+	min-height: 91px;
+	box-sizing: border-box;
+	padding: 25px 0;
+} 
+
+.head h1,
+.head .phone {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.head span {
+	font-weight: 400;
+}
+
+/*стили меню*/
+
+nav {
+	background-image: url(img/navback.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+	min-height: 51px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+nav li {
+	display: inline-block;
+
+}
+
+li a {
+	display: block;
+	text-decoration: none;
+	list-style: none;
+	font-size: 14px;
+	font-weight: 800;
+	color: black;
+	padding: 0 17px;
+	padding-bottom: 20px;
+	padding-top: 18px;
+}
+
+.zeropad {
+	padding-left: 2px;
+}
+
+/*Секция с обратной связью*/
+
+#main {
+	background-image: url(img/mainback.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	color: white;
+}
+
+#main .container {
+	padding: 40px 0 85px 8px;
+	max-height: 581px;
+	box-sizing: border-box;
+	position: relative;
+	
+}
+
+#main .container h2,
+#main .container p,
+#main .container .price {
+	padding: 14px 0;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	color: #f5dd0e;
+	font-size: 48px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+#main .pic {
+	position: absolute;
+	bottom: 0;
+	left:53%;
+}
+
+#main .price img {
+	margin-right: 20px;
+}
+
+ #main .container .price + p {
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0;
+	padding-bottom: 12px;
+}
+
+/*стили формы */
+
+.forma {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 15px;
+	border-radius: 5px;
+	max-width: 516px;
+}
+.leftform,
+.rightform{
+	padding: 9px;
+}
+
+.forma input,
+.forma section,
+.forma option {
+	font-size: 16px;
+}
+
+.leftform input {
+	background-image: url(img/name.png);
+	background-repeat: no-repeat;
+	background-position:  9% center;
+	box-sizing: border-box;
+	padding-left: 48px;
+
+}
+
+.rightform input {
+	background-image: url(img/grayghone.png);
+	background-repeat: no-repeat;
+	background-position:  9% center;
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+
+
+
+input,
+select,
+button {
+	border: none;
+	box-sizing: border-box;
+	display: block;
+	height: 48px;
+	width: 240px;
+	margin: 10px 0;
+	border-radius: 5px;
+	color: #6c6c6c;
+}
+
+button {
+	color: black;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: #f5dd0e;
+	text-transform: uppercase;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background-image: url(img/arrow.png);   /* add custom arrow */;
+   background-position: 95% 50%;
+   background-repeat: no-repeat;
+   padding-left: 22px;
+   font-size: 16px;
+   color: #6c6c6c;
+}
+
+select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+/*Секция прайса */
+
+#price {
+	position: relative;
+	top: -75px;
+	background-image: url(img/twoback.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1000;
+	width: 100%;
+	min-height: 912px;
+}
+
+#price .container {
+	display: block;
+	z-index: 10;
+	box-sizing: border-box;
+	padding-left: 19%;
+	position: relative;
+	top: 75px;
+}
+
+#price .container h2 {
+	color: #c9770d;
+	padding: 15px 0;
+}
+
+#price .container p {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 15px 0;
+}
+
+#price .container .branding {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+#price .container  .box {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+
+
+/*стили к иконкам цен*/
+.box .window .cost {
+	 display: block;
+}
+
+.box form {
+	display: flex;
+	justify-content: center;
+}
+
+.box  button{
+
+	position: relative;
+	top: -17px;
+	/*left: 27px;*/
+}
+.window  {
+	background-image: url(img/priceIcon.png);
+	background-position: 5% 5%;
+	background-repeat: no-repeat;
+	border: 1px solid #acacac;
+	border-radius: 10px;
+	width: 271px;
+	box-sizing: border-box;
+	padding: 23px;
+}
+
+.window img {
+	padding: 0;
+	width: 224px;
+	margin: 0 auto;
+}
+
+#price .container .cost p {
+	font-size: 14px;
+	margin-left: 75px;
+	font-weight: 700;
+	padding: 9px 0;
+}
+
+#price .container .cost p + p {
+	font-size: 18px;
+	color: #991515;
+	padding: 9px 0;
+	
+}
+
+#price .container .gett {
+	display: block;
+	color: white;
+	background-image: url(img/gettback.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+#price .container .gett p {
+	padding: 0;
+	font-size: 18px;
+}
+#price .container .gett .phone {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+#price .container .gett button {
+	position: static;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: transparent;
+	border: 1px solid white;
+	min-width: 334px;
+	padding: 0 29px;
+	white-space: nowrap;
+	margin: 0;
+	margin-right: 25px;
+}
+
+
+/*стили лицензия такси */
+#taxi {
+	background: url(img/pasport.png) repeat-y ,
+                #eed710 ;
+	background-position: -12% 0;
+	position: relative;
+	top: -160px;
+	z-index: 00;
+	margin-bottom: -160px;
+}
+
+#taxi .container {
+	box-sizing: border-box;
+	padding: 57px 0 57px 259px; 
+}
+
+
+#taxi .container p {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+#taxi .container button {
+	position: static;
+	color: black;
+	font-size: 14px;
+	font-weight: 800;
+	margin-top: 24px;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: 1px solid black;
+	min-width: 252px;
+}
+
+/*стили преимуществ*/
+
+#skill .container {
+	padding: 39px 0;
+}
+
+#skill h2 {
+	color: #c9770d;
+	text-align: center;
+	padding: 13px 0;
+}
+
+#skill p {
+	font-size: 18px;
+	text-align: center;
+	padding: 13px 0;
+	font-weight: 600;
+}
+
+.icons {
+	padding: 13px 0;
+}
+
+.icons, .row  {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+
+.icon {
+	display: inline-block;
+	background-color: #f5dd0e;
+	width: 50%;
+	height: 124px;
+	border-radius: 4px;
+	text-align: center;
+	padding-top: 25px;
+	margin: 6px;
+}
+
+.icon p {
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+.icon2 img,
+.icon2 p {
+	position: relative;
+	bottom: 15px;
+}
+
+/*стили для наших работ*/
+
+/*опеределяем котейнеры*/
+
+
+.leftBox, .rightBox {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#skill .row {
+	margin-bottom: 47px;
+}
+
+
+/*стиль значка*/
+
+.solaris {
+	border-radius: 10px;
+	box-shadow: 0px 5px 29px 0px #cdcdcd;
+	height: 234px;
+}
+#skill  .solaris img {
+	padding-bottom: 6px;
+}
+
+#skill .solaris p img {
+	padding: 0 9px 0 0;
+}
+
+#skill .solaris p {
+	text-align: left;
+	margin-left: 21px;
+	padding: 6px 0;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+#skill .solaris p + p {
+	font-weight: 600;
+
+}
+
+
+/*аренда авто*/
+
+#rent {
+	background-image: url(img/rentback.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 90px 0 90px 0;
+}
+
+#rent .container {
+	color: white;
+}
+
+#rent .container h2 {
+	padding: 19px 0;
+}
+
+#rent .container h3 {
+	padding: 20px 0;
+}
+
+#rent .container p {
+	padding: 10px 0;
+}
+
+#rent .sect .whitefone {
+	display: block;
+	background-color: #fff;
+	width: 85px;
+	height: 51px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 4px;
+	border-radius: 4px;
+}
+#rent .sect .last {
+	padding-top: 10px;
+	padding-bottom: 0px;
+} 
+
+#rent .sect {
+	display: flex;
+	margin: 5px 0;
+	align-items: center;
+	font-weight: 700;
+}
+
+#rent .sect p {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 0 21px;
+}
+
+
+#rent button {
+	min-width: 342px;
+	font-weight: 800;
+	font-size: 14px;
+}
+
+
+/*отзывы*/
+
+#feed .container {
+	box-sizing: border-box;
+	padding: 39px 0;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+#feed h2 {
+	color: #c9770d;
+	text-align: center;
+	padding: 13px 0;
+}
+
+#feed p {
+	font-size: 18px;
+	text-align: center;
+	padding: 13px 0;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+#feed .feedback {
+	display: flex;
+}
+
+#feed .feedback img {
+	width: 126px;
+	height: 126px;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 35px;
+}
+
+#feed .speak {
+	box-sizing: border-box;
+	margin: 15px 0;
+	width: 86%;
+	
+	padding: 30px 55px;
+	bottom: 100px;
+	border-radius: 15px;
+	border: 1px solid #a5a5a5;
+	margin-left: 140px;
+}
+
+#feed .speak h4 {
+	text-transform: none;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: italic;
+}
+
+#feed .speak p{
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+	color: #7e7e7e;
+	margin-bottom: 0;
+}
+
+
+/*контакты */
+#contacts {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#contacts .container {
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	max-width: 1200px;
+	max-height: 120px;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+#contacts .container  {
+	background-color: #eed710;
+	border-radius: 5px;
+	padding: 33px;
+}
+
+#contacts .container p {
+	padding: 0;
+	margin: 0;
+}
+
+#contacts .container .logo {
+	padding: 0;
+	margin-left: 17%;
+}
+
+
+#smile {
+	position: absolute;
+	top: -49px;
+	left: -7px;
+	margin: 0;
+	padding: 0;
+	z-index: 1000;
+}
+
+
+
+
+
+
+
+/*футер*/
+
+footer {
+	text-align: center;
+}
+
+footer p {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+/*текст для продвижения */
+
+#seo .container {
+	padding: 8px;
+	max-width: 1020px;
+}
+
+
+#seo h2{
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+#seo p{
+	padding: 14px 0;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+
+.thank {
+	width: 546px;
+	min-height: 166px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 15px;
+	border-radius: 5px;
+	max-width: 516px;
+	text-align: center;
+}
+
+
+/*адаптив*/
+@media only screen and (max-width: 1023px)  {
+	.head {
+		display: block;
+		text-align: center;
+	}
+	nav  {
+	display: flex;
+    background-repeat: repeat;
+
+	}
+
+	.container {
+		max-width: 1023px;
+		margin: 0 auto;
+	}
+
+	#main .container {
+		box-sizing: content-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#main .container p {
+		text-align: center;
+	}
+
+	#main .container p br {
+		display: none;
+	}
+
+	#main img {
+	display: none;
+	}
+
+	#price {
+		background-position: 80%;
+	}
+
+	#price .container,
+	#taxi .container {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	#taxi {
+		position: static;
+		margin-bottom: 0;
+	}
+
+	#taxi .container {
+		text-align: center;
+	}
+
+	.branding {
+		display: block;
+	}
+
+	.icons {
+	display: block;
+	
+	}
+
+	#rent .container {
+		box-sizing: border-box;
+		padding: 10px;
+	}
+
+	#rent .container p {
+		font-size: 1em;
+	}
+
+	.row,
+	#skill .row {
+		margin-bottom:0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.leftBox, .rightBox {
+	display: block;
+	width: 225px;
+	}
+
+	#skill .solaris {
+		margin-bottom: 15px;
+	}
+	
+	#smile {
+		display: none;
+	}
+
+	#contacts .container {
+		display: block;
+		height: 100%;
+		padding: 5px;
+	}
+	#contacts .container .logo {
+		margin: 0;
+	}
+
+};
+
+@media only screen and (max-width: 479px) {
+
+
+	nav .container {
+		/*max-width: 479px;*/
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		display: flex;
+		align-items: center;
+	}
+
+	nav li {
+
+	}
+
+	li a {
+		padding: 0 8px;
+	}
+
+	#main .container {
+		/*position: static;*/
+		box-sizing: content-box;
+		text-align: center;
+		max-height: none;
+		padding: 40px 0 35px 8px;
+	}
+
+	.forma {
+		display: flex;
+		flex-direction: column;
+		/*position: relative;*/
+	}
+
+	#price {
+		position: static;
+		box-sizing: content-box;
+		background-color: white;
+		max-height: 1790px;
+	}
+
+	#price .container {
+		background-color: white;
+		padding: 9px;
+		position: static;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		box-sizing: content-box;
+	}
+
+	#price .container .branding {
+		box-sizing: content-box;
+		display: inline-block;
+	}
+	
+	#price .container .gett {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: content-box;
+	}
+
+	#price .container .gett .phone {
+		display: block;
+		padding-left: 20px;
+	}
+
+	#price .container .gett .phone img {
+		margin-top: 9px;
+	}
+
+
+
+	#taxi {
+		position: static;
+		margin-bottom: 0;
+	}
+
+	#skill .container {
+	padding: 15px;
+	}
+
+	#skill .contant .row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#rent {
+		padding: 0;
+	}
+
+	#rent .container {
+		padding: 5px 15px 25px 15px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+	}
+
+	#rent .container button {
+		display: inline;
+		text-align: center;
+	}
+
+	#taxi .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#contacts .container {
+		max-height: none;
+	}
+
+	#seo .container {
+		padding: 15px;
+	}
+
+	#seo .container h2 {
+		text-align: center;
+	}
+
+}
+
